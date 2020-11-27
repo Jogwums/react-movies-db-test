@@ -1,0 +1,62 @@
+.result-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.poster-wrapper, img{
+    max-width: 100%;
+    height: auto;
+}
+
+.temp-poster{
+    background-color: rgb(248, 248, 182);
+    border-radius: 5px;
+    height:  304px;
+    width: 320px;
+    max-width: 100%;
+
+}
+
+.info{
+    margin: 1rem auto; 
+    padding: 0;
+    text-align: center;
+
+}
+
+.header{
+    display: grid;
+    margin: .5rem auto;
+}
+
+.title{
+    padding: 0;
+}
+.release-date{
+    font-weight: 400;
+}
+
+.controls button{
+    padding: .8rem 2rem;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background: linear-gradient(45deg, coral, darkred, lightcoral);
+}
+button[disabled]{
+    background: lightslategray;
+}
+
+
+@media (min-width: 600px){
+    .result-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
