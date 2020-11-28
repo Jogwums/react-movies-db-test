@@ -3,7 +3,7 @@ import {GlobalState} from '../context/GlobalState'
 
 const MovieControls = ({movie, type}) => {
   const {
-    removeMovieFromWatchlist,
+    removeMovieFromWatchList,
     addMovieToWatched,
     moveToWatchlist,
     removeFromWatched,
@@ -20,7 +20,7 @@ const MovieControls = ({movie, type}) => {
 
                   <button
                     className="ctrl-btn del"
-                    onClick={() => removeMovieFromWatchlist(movie.id)}
+                    onClick={() => removeMovieFromWatchList(movie.id)}
                   >
                     <i className="fa-fw fa fa-times"></i>
                   </button>
