@@ -1,8 +1,6 @@
 import React, {useContext} from 'react'
 import {GlobalState} from '../context/GlobalState'
 
-import { FaEye, FaTimes} from 'react-icons/fa'
-
 const MovieControls = ({movie, type}) => {
   const {
     removeMovieFromWatchlist,

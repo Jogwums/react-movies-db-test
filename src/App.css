@@ -1,7 +1,6 @@
 .movie-page{
   width: 100%;
   margin: 0 auto;
-  border: 1px solid white;
 }
 .container{
   display: flex;
@@ -24,9 +23,6 @@
 
 @media (min-width: 600px){
   
-  .container{
-
-  }
   .movie-grid{
     display: flex;
     flex-grow: 0;
