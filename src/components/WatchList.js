@@ -4,7 +4,7 @@ import MovieCard from './MovieCard'
 
 const WatchList = () => {
     const { watchlist } = useContext(GlobalState)
-    console.log(watchlist)
+    
 
     return (
         <>
@@ -14,11 +14,14 @@ const WatchList = () => {
                         <h1 className="heading">
                             My Movie Watchlist
                         </h1>
+                        <span className="count-pill">
+                            {watchlist.length} {watchlist.length === 1 ? "Movie" : "Movies"}
+                        </span>
                     </div>
                     {watchlist.length > 0 ? (
                         <div className="movie-grid">
                             {watchlist.map(movie => (
-                                <MovieCard key={movie.id} movie={movie} />
+                                <MovieCard key={movie.id} movie={movie} type="watchlist" />
                             ))}
                         </div>
                     ) : (

@@ -1,13 +1,27 @@
 import React from 'react'
+import MovieControls from './MovieControls'
 
-const MovieCard = ({movie}) => {
+const MovieCard = ({movie, type}) => {
 
     return (
-        <div>
+        
             <div className="card">
-                <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title.substring(0,5)}/>
+                <div className="ovelay"></div>
+                {
+                    movie.poster_path ? (
+                        <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} 
+                        alt={movie.title.substring(0,5)}/>
+                    ) : (
+                        <div className="temp-poster">
+
+                        </div>
+                    )
+                }
+
+                <MovieControls type={type} movie={movie} />
+                
             </div>
-        </div>
+        
     )
 }
 

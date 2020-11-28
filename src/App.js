@@ -10,7 +10,7 @@ import { theme } from './theme';
 import { Burger, Menu } from './components';
 
 
-// import './App.css';
+import './App.css';
 
 function App() {
   const [open, setOpen] = useState(false);
